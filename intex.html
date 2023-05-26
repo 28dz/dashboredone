@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- file css -->
+    <link rel="stylesheet" href="css/uicons-regular-straight.css"> 
+    <!-- <link rel="stylesheet" href="css/Normalize.css"> -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <title>tempale 03</title>
+</head>
+<body>
+   <aside>
+        <nav class="navbar">
+            <h1 class="logo">brand<span>name</span></h1>
+            <ul>
+                <li><a href="#"><i class="fi-rs-pixabay"></i>dashboard</a></li>
+                <li><a href="#"><i class="fi-rs-form"></i>forms</a></li>
+                <li><a href="#"><i class="fi-rs-credit-card"></i>cards</a></li>
+                <li><a href="#"><i class="fi-rs-chart-pie-alt"></i>charts</a></li>
+                <li><a href="#"><i class="fi-rs-cursor"></i>buttons</a></li>
+                <li><a href="#"><i class="fi-rs-object-union"></i>modals</a></li>
+                <li><a href="#"><i class="fi-rs-align-justify"></i>tables</a></li>
+                <li class="dropdown">
+                    <label for="but"></label> 
+                    <a href="#">
+                        <i class="fi-rs-browsers"></i>
+                        <span>pages</span>
+                        <i class="asd fi-rs-angle-small-down"></i>
+                    </a> 
+                    <ul class="dropdown-menu">
+                        <li><a href="#">login</a></li>
+                        <li><a href="#">craete account</a></li>
+                        <li><a href="#">forgot password</a></li>
+                        <li><a href="#">blank</a></li>
+                        <li><a href="#">404</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+   </aside>
+   <header>
+    <form action="">
+        <label for="search"></label>
+        <input type="search" name="search" id="search" placeholder="search...">
+        <input type="submit" value="search">
+    </form>
+    <section class="user-header">
+        <ul>
+            <li><a href="#"><i class="fi-rs-eclipse-alt"></i></a></li>
+            <li><a href="#"><i class="fi-rs-bell"></i></a></li>
+            <li class="duser">
+                <a href="#"><img src="images/team/img2.jpg" alt=""></a>
+                <ul class="dusermenu">
+                    <li><a href="#"><i class="fi-rs-user"></i>profile</a></li>
+                    <li><a href="#"><i class="fi-rs-settings"></i>setting</a></li>
+                    <li><a href="#"><i class="fi-rs-exit"></i>log out</a></li>
+                </ul>    
+            </li>
+        </ul>      
+    </section>
+   </header>
+   <main>
+   <section class="ms">
+        <h1 class="ms-text">dashboard</h1>
+        <section class="box">
+            <div class="box-itme">
+                <i class="fi-rs-users-alt"></i>
+                <div>
+                  <h3>total clients</h3>
+                  <span>7589</span>
+                </div>
+            </div>
+            <div class="box-itme">
+                <i class="fi-rs-money-bills-simple"></i>
+                <div>
+                    <h3>account balance</h3>
+                    <span>$ 46,760.86</span>
+                </div>
+                
+            </div>
+            <div class="box-itme">
+                <i class="fi-rs-shopping-cart"></i>
+                <div>
+                    <h3>new sales</h3>
+                    <span>376</span>
+                </div>
+                
+            </div>
+            <div class="box-itme">
+                <i class="fi-rs-messages"></i>
+                <div>
+                    <h3>pending contacts</h3>
+                    <span>35</span>
+                </div>
+                
+            </div>
+        </section>
+   </section>
+   <div class="wrapper">
+    <table>
+        <thead>
+           <tr>
+             <th>client</th>
+             <th>amount</th>
+             <th>status</th>
+             <th>date</th>
+           </tr>
+        </thead>
+        <tbody>
+         <tr>
+             <td data-cell="client">
+                  <div class="c-it">
+                         <img src="images/team/img1.jpg" alt="">
+                        <div>
+                        <strong>hans burger</strong>
+                        <span>10x developer</span>
+                        </div>
+                   </div>
+                 </td>
+             <td data-cell="amount">$ 863.45</td>    
+             <td data-cell="status">approved</td>    
+             <td data-cell="date">6/10/2023</td>    
+         </tr>
+         <tr>
+             <td data-cell="client">
+                 <div class="c-it">
+                     <img src="images/team/img3.jpg" alt="">
+                 <div>
+                 <strong>jolina angelie</strong>
+                 <span>unemployed</span>
+                 </div>
+                 </div>
+                 </td>
+             <td data-cell="amount">$ 369.95</td>    
+             <td data-cell="status">pending</td>    
+             <td data-cell="date">6/10/2023</td>    
+         </tr>
+         <tr>
+             <td data-cell="client">
+                 <div class="c-it">
+                     <img src="images/team/img4.jpg" alt="">
+                     <div>
+                     <strong>sarah curry</strong>
+                     <span>designer</span>
+                     </div>
+                 </div>
+                 </td>
+             <td data-cell="amount">$ 86.00</td>    
+             <td data-cell="status">denied</td>    
+             <td data-cell="date">6/10/2023</td>    
+         </tr>
+         <tr>
+             <td data-cell="client">
+                 <div class="c-it">
+                     <img src="images/team/img5.jpg" alt="">
+                 <div>
+                 <strong>rulia joberts</strong>
+                 <span>actress</span>
+                 </div>
+                 </div>
+                 </td>
+             <td data-cell="amount">$ 1327.45</td>    
+             <td data-cell="status">approved</td>    
+             <td data-cell="date">6/10/2023</td>    
+         </tr>
+         <tr>
+             <td data-cell="client">
+                  <div class="c-it">
+                     <img src="images/team/img6.jpg" alt="">
+                 <div>
+                 <strong>jolina angelie</strong>
+                 <span>unemployed</span>
+                 </div>
+                  </div>
+                 </td>
+             <td data-cell="amount">$ 865.35</td>    
+             <td data-cell="status">expired</td>    
+             <td data-cell="date">6/10/2023</td>    
+         </tr>
+         <tr>
+             <td data-cell="client">
+                  <div class="c-it">
+                     <img src="images/team/img7.jpg" alt="">
+                 <div>
+                 <strong>wenzel dashington</strong>
+                 <span>actor</span>
+                 </div>
+                  </div>
+                 </td>
+             <td data-cell="amount">$ 894.61</td>    
+             <td data-cell="status">approved</td>    
+             <td data-cell="date">6/10/2023</td>    
+         </tr>
+         <tr>
+             <td data-cell="client">
+                  <div class="c-it">
+                     <img src="images/team/img8.jpg" alt="">
+                 <div>
+                 <strong>jolina angelie</strong>
+                 <span>unemployed</span>
+                 </div>
+                  </div>
+                 </td>
+             <td data-cell="amount">$ 894.61</td>    
+             <td data-cell="status">approved</td>    
+             <td data-cell="date">6/10/2023</td>    
+         </tr>
+         <tr>
+             <td data-cell="client">
+                 <div class="c-it">
+                     <img src="images/team/img9.jpg" alt="">
+                 <div>
+                 <strong>dave li</strong>
+                 <span>influencer</span>
+                 </div>
+                 </div>
+                 </td> 
+             <td data-cell="amount">$ 894.61</td>    
+             <td data-cell="status">approved</td>    
+             <td data-cell="date">6/10/2023</td>    
+         </tr>
+        </tbody>
+    </table>
+   </div>
+
+       
+   </main>
+   
+</body>
+</html>

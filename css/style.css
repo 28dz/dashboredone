@@ -1,0 +1,370 @@
+
+body {
+    display: grid;
+    grid-template-columns: 16rem auto ;
+    /* repeat(auto-fill,minmax(16rem,0)) */
+}
+
+/* star aside */
+
+aside {
+    position: fixed;
+    height: 100vh;
+    min-width: 16rem;
+    background-color: var(--main-color);
+    overflow:hidden;
+    z-index: 2;
+}
+
+/* star logo */
+
+aside .navbar .logo {
+    position: relative;
+    padding: 20px;
+    font-family: "Bruno Ace SC", cursive;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(64, 64, 67);
+    transition: color 0.5s;
+}
+
+aside .navbar .logo span {
+    font-size: 10px;
+    position: absolute;
+}
+
+aside .navbar .logo:hover{
+    color: var(--secondary-color);
+}
+  /* end log */
+
+aside .navbar ul {
+    display: flex;
+    flex-direction: column;
+}
+
+aside .navbar ul li {
+    padding: 10px 0px 10px 10px;
+    margin-left: 10px;
+}
+
+aside .navbar ul li a {
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #0a0d0b;
+    display: flex;
+}
+
+aside .navbar ul li i {
+    margin-right: 15px ;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+aside .navbar > ul > li:hover {
+    background-color: #e7ecef;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 1px 2px 5px -3px, rgba(0, 0, 0, 0.3) 0px 2px 0px -2px;
+}
+
+aside .navbar ul a:focus {
+    color: var(--secondary-color);
+}
+
+aside ul .dropdown .asd {
+    padding-left: 100px;
+}
+
+aside ul .dropdown {
+    position: relative;
+    
+}
+
+aside ul .dropdown .dropdown-menu {
+    position: absolute;
+    top: 60px;
+    width: 13rem;
+    border-radius: 10px;
+    background-color: rgba(105, 206, 227, 0.596);
+    box-shadow: rgb(43, 132, 211) 3px 3px 6px 0px inset,
+                rgba(116, 132, 197, 0.5) -3px -3px 6px 1px inset;
+    transition: all 0.5s; 
+    opacity: 0;     
+    visibility: hidden;
+}
+
+aside ul .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 800px) {
+    body {
+        display: grid;
+        grid-template-columns: 0;
+        height: 100vh;
+    }
+
+    aside {
+        display: none;
+    }
+
+}
+
+ /* end aside */
+/* star header */
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;            
+    height: 10vh;
+    background-color: #e7ecef;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 20px 0px ,
+                rgba(0, 180, 216, 0.7) 0px 5px 20px 0px;
+}
+
+header form {
+    flex-basis: 60rem;
+    text-align: right;
+}
+
+header form input[type ="search"] {
+    padding-left: 20px;
+    width: 300px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 25px 25px 30px 25px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+header form input[type="submit"] {
+    position: relative;
+    left: -60px;
+    width: 60px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    background-color: #00b4d8;
+    color: white;
+    text-transform: capitalize;
+}
+
+header form input[type="submit"]:hover {
+    background-color: #ffb703;
+    color: #000;
+    cursor: pointer;
+}
+
+@media (max-width: 540px) {
+    header form input[type ="search"] {
+        width: 230px;
+    }
+    header form input[type="submit"] {
+        width: 60px;
+    }
+
+}
+
+@media (max-width: 460px) {
+    header form {
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+}
+
+/* star user */
+
+header .user-header{
+    margin-right: 10px;
+}
+
+header .user-header ul {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+header > .user-header > ul > li > a {
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+header .user-header img {
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+/* star dropdown user */
+
+header .user-header .duser {
+    position: relative;
+}
+
+header .user-header .duser .dusermenu {
+    position: absolute;
+    width: 13rem;
+    right: -5px;
+    padding: 5px;
+    flex-direction: column;
+    align-items: start;
+    background-color:#f0f2f4 ;
+    border-radius: 7px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+header .user-header .duser:hover .dusermenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+header .user-header .duser .dusermenu li {
+    width: 100%;
+    margin: 3px 0;
+    text-transform: capitalize;
+}
+
+header .user-header .duser .dusermenu li:hover {
+    border-radius: 8px;
+    background-color: #cbcac6;
+}
+
+header .user-header .duser .dusermenu li a {
+    padding: 5px;
+    display: block; 
+}
+
+header .user-header .duser .dusermenu li a i {
+    margin-right: 7px;
+}
+   /* end dropdown user */
+  /* end user */
+ /* end header */
+/* star main */ 
+
+main {
+    grid-column-start: 2 ;
+    background-color: var(--tcolr);
+}
+
+/* star section */
+
+.ms {
+    padding: 90px 24px;     
+}
+.ms .ms-text {
+    margin:1.5rem 0;
+    text-transform: capitalize;
+}
+
+.ms .box{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-gap: 1.5rem;
+}
+
+.ms .box .box-itme {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 18px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.ms .box .box-itme i {
+    padding: 15px;
+    font-size: 15px;
+    color: #14213d;
+    background-color: #caf0f8;
+    border-radius: 50%;
+}
+
+.ms .box .box-itme h3 {
+    font-size: .875rem;
+    color: rgb(90, 84, 121);
+    margin-bottom: 5px;
+}
+
+.ms .box .box-itme span {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+@media (max-width: 1240px) {
+    .ms .box{
+        display: grid;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+
+@media (max-width: 760px) {
+    .ms .box{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+ /* end section */
+/* star table */
+
+main .wrapper {
+    padding: 0 24px;
+}
+
+main table {
+    border-collapse: collapse;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.05);
+    border-radius: 10px;
+}
+
+main table thead {
+    text-align: left;
+}
+
+main table tr {
+    border-bottom: 2px solid rgba(0,0,0,.05);
+}
+
+main table th , td {
+    padding: 10px;
+}
+
+main table tbody td .c-it {
+    display: flex;
+    gap: 10px;
+}
+
+main table tbody td .c-it div strong{
+    display: block;
+}
+ 
+main table tbody td img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+@media (max-width: 550px) {
+
+}
+
+/* end table */
+
+/* end main */
+
